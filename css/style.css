@@ -41,6 +41,15 @@ section.courses {
 	float: left;
 	width: 659px;
 	border-right: 1px solid #eeeeee;}
+section.search {
+	float: left;
+	width: 659px;
+	border-right: 1px solid #eeeeee;}	
+section.search p {
+	margin: 20px 10px 0 10px;
+	text-align: right; }	
+section.search input {
+	width: 20em;  }
 article {
 	clear: both;
 	overflow: auto;
@@ -85,3 +94,8 @@ aside h2 {
 footer {
 	font-size: 80%;
 	padding: 7px 0px 0px 20px;}
+section.courses p.hidden {
+	display: none; }
+section.courses	p span{
+	cursor: pointer;
+	font-weight: bold;}

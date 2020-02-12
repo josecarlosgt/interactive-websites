@@ -7,6 +7,8 @@
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/cooking-school.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -22,29 +24,26 @@
 					</ul>
 				</nav>
 			</header>
-			<section class="courses">
-				<article>
-					<figure>
-						<img src="images/bok-choi.jpg" alt="Bok Choi" />
-						<figcaption>Bok Choi</figcaption>
-					</figure>
+			<section class="search">
+				<p>
+					<input placeholder="Search for your favorite course" type="text" id="searchText">
+					<button type="submit" onclick="search()">Search</button>
+				</p>
+			</section>
+			<section class="courses" id="coursesList"><!-- HTML in this section should be created dynamically using JavaScript -->
+				<!-- HTML SAMPLE:
+					<article>
+						<figure>
+							<img src="images/teriyaki.jpg" alt="Teriyaki sauce" />
+							<figcaption>Teriyaki Sauce</figcaption>
+						</figure>
 
-						<h2>Japanese Vegetarian</h2>
-						<h3>Five week course in London</h3>
+							<h2>Sauces Masterclass</h2>
+							<h3>One day workshop</h3>
 
-					<p>A five week introduction to traditional Japanese vegetarian meals, teaching you a selection of rice and noodle dishes.</p>
-				</article>    
-				<article>
-					<figure>
-						<img src="images/teriyaki.jpg" alt="Teriyaki sauce" />
-						<figcaption>Teriyaki Sauce</figcaption>
-					</figure>
-
-						<h2>Sauces Masterclass</h2>
-						<h3>One day workshop</h3>
-
-					<p>An intensive one-day course looking at how to create the most delicious sauces for use in a range of Japanese cookery.</p>
-				</article>    
+						<p>An intensive one-day course looking at how to create the most delicious sauces for use in a range of Japanese cookery.</p>
+					</article>    				
+				--->
 			</section>
 			<aside>
 				<section class="popular-recipes">
@@ -61,7 +60,7 @@
 						Shoreditch<br />
 						London E2 7DP</p>
 				</section>
-			</aside>
+			</aside>			
 			<footer>
 				&copy; 2011 Yoko's Kitchen
 			</footer>
