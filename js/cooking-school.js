@@ -71,6 +71,12 @@ function createCourseHTML(course) {
 	* TASK 2
 	**********************************************************************************************************************/
 
+	// Add class to hide description when the page loads
+	description.addClass("hidden");		
+	
+	// Add identifier to description to identify it in the event handler 
+	description.attr("id", "desc_" + course.id);		
+
 	// Create a span element to capture the user's action of looking for more information about a course
 	let learnMore = $("<span>Learn more</span>");
 	
@@ -137,7 +143,7 @@ function toggleDescription() {
 	// Retrieve the object that triggered the click event
 	let title = $(this);
 	// Display or hide a course's description using the toggle function
-	$(".desc_" + title.attr("id")).toggle(0, function() {
+	$("#desc_" + title.attr("id")).toggle(0, function() {
 		// Update the element's text referred by title to "Show less or Learn more
 		// You may look at the current content of title to implement the update
 	});
